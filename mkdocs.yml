@@ -5,3 +5,7 @@ theme:
 nav:
   - Indice: index.md
   - Descrizione del progetto: description.md
+  - Comprensione del problema: problem.md
+  - Pubblico e target: target.md
+  - Criticità: crit.md
+  - Requisiti necessari: req.md
