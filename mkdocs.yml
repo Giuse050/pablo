@@ -1,4 +1,7 @@
 site_name: ISW-DOCS
 
 theme:
-	name: “material”
+  name: material
+nav:
+  - Indice: index.md
+  - Descrizione del progetto: description.md
