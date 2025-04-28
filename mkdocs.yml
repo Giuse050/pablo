@@ -3,7 +3,7 @@ site_name: SyncGames
 theme:
   name: material
 nav:
-  - User story: index.md
+  - User story: us.md
   - Descrizione del progetto: description.md
   - Comprensione del problema: problem.md
   - Pubblico e target: target.md
