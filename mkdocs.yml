@@ -3,7 +3,7 @@ site_name: ISW-DOCS
 theme:
   name: material
 nav:
-  - Indice: index.md
+  - User story: index.md
   - Descrizione del progetto: description.md
   - Comprensione del problema: problem.md
   - Pubblico e target: target.md
