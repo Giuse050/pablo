@@ -1,3 +1,5 @@
+__Target__
+
 Il pubblico del software comprende potenzialmente
 tutte le età, in quanto non esiste un limite per il quale
 si smette di amare i videogiochi. Alla fine nella vita
