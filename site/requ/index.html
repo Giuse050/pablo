@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../target/">
+        <link rel="prev" href="../cs/">
       
       
-        <link rel="next" href="../req/">
+        <link rel="next" href="../funz/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Criticità - SyncGames</title>
+        <title>Requisiti - SyncGames</title>
       
     
     
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Criticità
+              Requisiti
             
           </span>
         </div>
@@ -274,17 +274,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../crit/" class="md-nav__link">
         
   
   
@@ -295,7 +288,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -348,10 +340,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../requ/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -362,6 +361,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -420,14 +420,59 @@
 
 
 
-  <h1>Criticità</h1>
+  <h1>Requisiti</h1>
 
-<p><strong>Manipolazione</strong></p>
-<p>L'IA può essere facilmente manipolata per sfruttarla in modo tale che determinati giochi vengano riproposti troppo spesso</p>
-<p><strong>Difficoltà di delineazione</strong></p>
-<p>La difficoltà che presenta l'algoritmo nel delineare le preferenze dell'utente</p>
-<p><strong>Grandezza del mercato</strong></p>
-<p>Il mercato videoludico è in continua espansione è letteralmente impossibile avere la libreria completa presente online</p>
+<p>REQUISITI FUNZIONALI </p>
+<p>1️. Creazione Profilo Utente</p>
+<p>-Registrazione e accesso</p>
+<p>--L’utente può registrarsi usando email/password o account social (Google, Facebook, Steam).</p>
+<p>--È possibile effettuare il login su più dispositivi.</p>
+<p>-Inserimento preferenze videoludiche</p>
+<p>L’utente compila un questionario su: generi preferiti, piattaforme possedute, modalità di gioco preferite (singleplayer, multiplayer).</p>
+<p>-Collegamento account esterni:</p>
+<p>Possibilità di sincronizzare la propria libreria giochi da account Steam, Xbox, PlayStation per popolare automaticamente i giochi già giocati.</p>
+<p>-Modifica e aggiornamento profilo:</p>
+<p>L’utente può aggiornare preferenze, aggiungere/rimuovere piattaforme e generi in qualsiasi momento.</p>
+<p>2️.  Ricerca e Suggerimento Giochi</p>
+<p>-Definizione filtri di ricerca:1</p>
+<p>L’utente può specificare contesto e parametri: es. “cercami un gioco per 3 persone, durata max 1 ora, su PC”.</p>
+<p>-Algoritmo di matchmaking:</p>
+<p>Il sistema combina le informazioni del profilo con il contesto per calcolare una classifica di giochi consigliati.</p>
+<p>-Visualizzazione classifica giochi:</p>
+<p>Ogni gioco suggerito mostra: nome, copertina, descrizione breve, percentuale di compatibilità, recensioni.</p>
+<p>-Gestione lista preferiti:</p>
+<p>L’utente può aggiungere giochi ai preferiti o escluderli per non ricevere più suggerimenti simili.</p>
+<p>-Feedback sul consiglio:</p>
+<p>L’utente può votare i consigli ricevuti per migliorare l’accuratezza dell’algoritmo nel tempo.</p>
+<p>3️. Comparazione e Acquisto</p>
+<p>-Ricerca automatica prezzi:</p>
+<p>Il sistema interroga store partner (es. Steam, Epic, Amazon, Instant Gaming) per recuperare i prezzi aggiornati.</p>
+<p>-Visualizzazione offerte:</p>
+<p>Le offerte vengono ordinate per prezzo, con indicazione di: nome store, eventuali tasse/spese incluse, valutazione dello store.</p>
+<p>-Reindirizzamento acquisto:</p>
+<p>Cliccando su un’offerta, l’utente viene portato sul sito esterno per completare l’acquisto.</p>
+<p>-Notifiche calo prezzo:</p>
+<p>SyncGames invia notifiche via email/app se un gioco nella wishlist scende sotto un prezzo soglia impostato dall’utente.</p>
+<p>REQUISITI NON FUNZIONALI </p>
+<p>1️. Prestazioni</p>
+<p>--Il sistema deve rispondere alle richieste di ricerca in ≤ 2 secondi per garantire un’esperienza fluida.</p>
+<p>--L’aggiornamento dei prezzi avviene ogni 12 ore per garantire dati affidabili senza sovraccaricare le API esterne.</p>
+<p>2️. Affidabilità</p>
+<p>--SyncGames deve garantire un uptime del 99% su base mensile.</p>
+<p>--In caso di crash del sistema, i dati utente (profilo, preferenze, giochi salvati) devono essere recuperabili senza perdita.</p>
+<p>--Salvataggio automatico di ogni modifica alle preferenze utente o ai giochi salvati.</p>
+<p>3️. Usabilità</p>
+<p>--Interfaccia user-friendly, accessibile sia da mobile che desktop, con design responsive.</p>
+<p>--Inclusione di un tutorial guidato alla prima registrazione per spiegare il funzionamento di SyncGames.</p>
+<p>--Iconografia chiara e linguaggio semplice per utenti non esperti di tecnologia.</p>
+<p>4️.  Compatibilità</p>
+<p>--Compatibilità con i principali browser aggiornati: Chrome, Firefox, Edge, Safari.</p>
+<p>--Supporto a risoluzioni da 720p a 4K, con adattamento automatico della UI.</p>
+<p>--L’app mobile (se prevista) compatibile con Android (≥ 8.0) e iOS (≥ 13).</p>
+<p>5️. Sicurezza</p>
+<p>--Utilizzo di protocolli sicuri HTTPS per tutte le comunicazioni tra client e server.</p>
+<p>--Crittografia dei dati sensibili (email, password) e uso di OAuth 2.0 per l’autenticazione tramite social.</p>
+<p>--Gestione dei dati utente in conformità con il GDPR, con possibilità per l’utente di cancellare definitivamente il proprio account e i relativi dati.</p>
 
 
 

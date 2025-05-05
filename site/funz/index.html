@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../target/">
+        <link rel="prev" href="../requ/">
       
-      
-        <link rel="next" href="../req/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Criticità - SyncGames</title>
+        <title>Funzionalità - SyncGames</title>
       
     
     
@@ -93,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Criticità
+              Funzionalità
             
           </span>
         </div>
@@ -274,17 +272,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../crit/" class="md-nav__link">
         
   
   
@@ -295,7 +286,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -370,10 +360,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../funz/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -384,6 +381,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -420,14 +418,39 @@
 
 
 
-  <h1>Criticità</h1>
+  <h1>Funzionalità</h1>
 
-<p><strong>Manipolazione</strong></p>
-<p>L'IA può essere facilmente manipolata per sfruttarla in modo tale che determinati giochi vengano riproposti troppo spesso</p>
-<p><strong>Difficoltà di delineazione</strong></p>
-<p>La difficoltà che presenta l'algoritmo nel delineare le preferenze dell'utente</p>
-<p><strong>Grandezza del mercato</strong></p>
-<p>Il mercato videoludico è in continua espansione è letteralmente impossibile avere la libreria completa presente online</p>
+<pre class="mermaid"><code>
+flowchart TD
+    A["Inizio: Utente accede a Syncgames"] --&gt; B["Registrazione con email o social login"]
+    B --&gt; C["Compilazione questionario preferenze"]
+    C --&gt; D{"Collegare account esterni?"}
+    D -- Sì --&gt; E["Importazione libreria giochi"]
+    D -- No --&gt; F["Salta importazione"]
+    E --&gt; G["Generazione scheda profilo"]
+    F --&gt; G
+    G --&gt; H["Profilo salvato e modificabile"]
+    H --&gt; I["Accesso funzione cerca gioco"]
+    I --&gt; J["Inserimento filtri contestuali"]
+    J --&gt; K["Analisi profilo, contesto e database giochi"]
+    K --&gt; L["Classifica giochi personalizzata"]
+    L --&gt; M["Visualizza dettagli: recensioni e video del gioco"] &amp; S["Seleziona gioco da acquistare"]
+    M --&gt; N{"Azione utente"}
+    N --&gt; O["Aggiungi alla wishlist"] &amp; P["Scarta gioco"] &amp; Q["Segnala errore algoritmo"]
+    O --&gt; R["Aggiorna algoritmo"]
+    P --&gt; R
+    Q --&gt; R
+    R --&gt; L
+    S --&gt; T["Clic su Trova al miglior prezzo"]
+    T --&gt; U["Recupero prezzi da store esterni"]
+    U --&gt; V["Visualizza offerte ordinate per prezzo"]
+    V --&gt; W["Seleziona store"]
+    W --&gt; X["Reindirizzamento a sito esterno"]
+    X --&gt; Y{"Sincronizzare con libreria?"}
+    Y -- Sì --&gt; Z["Aggiorna libreria utente"]
+    Y -- No --&gt; FINE["Fine"]
+    Z --&gt; FINE
+    style FINE color:#D50000</code></pre>
 
 
 
