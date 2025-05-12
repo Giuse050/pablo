@@ -1,7 +1,7 @@
-__Collaborazioni__
+## Collaborazioni
 
 servono delle buone collab con i princcipali store per avere una libreria aggiornata
 
-__IA__
+## IA
 
 un buon algoritmo che ci permetta di selezionare i giochi in base alle preferenze del cliente
