@@ -420,37 +420,55 @@
 
   <h1>Funzionalità</h1>
 
-<pre class="mermaid"><code>
-flowchart TD
-    A["Inizio: Utente accede a Syncgames"] --&gt; B["Registrazione con email o social login"]
-    B --&gt; C["Compilazione questionario preferenze"]
-    C --&gt; D{"Collegare account esterni?"}
-    D -- Sì --&gt; E["Importazione libreria giochi"]
-    D -- No --&gt; F["Salta importazione"]
-    E --&gt; G["Generazione scheda profilo"]
-    F --&gt; G
-    G --&gt; H["Profilo salvato e modificabile"]
-    H --&gt; I["Accesso funzione cerca gioco"]
-    I --&gt; J["Inserimento filtri contestuali"]
-    J --&gt; K["Analisi profilo, contesto e database giochi"]
-    K --&gt; L["Classifica giochi personalizzata"]
-    L --&gt; M["Visualizza dettagli: recensioni e video del gioco"] &amp; S["Seleziona gioco da acquistare"]
-    M --&gt; N{"Azione utente"}
-    N --&gt; O["Aggiungi alla wishlist"] &amp; P["Scarta gioco"] &amp; Q["Segnala errore algoritmo"]
-    O --&gt; R["Aggiorna algoritmo"]
-    P --&gt; R
-    Q --&gt; R
-    R --&gt; L
-    S --&gt; T["Clic su Trova al miglior prezzo"]
-    T --&gt; U["Recupero prezzi da store esterni"]
-    U --&gt; V["Visualizza offerte ordinate per prezzo"]
-    V --&gt; W["Seleziona store"]
-    W --&gt; X["Reindirizzamento a sito esterno"]
-    X --&gt; Y{"Sincronizzare con libreria?"}
-    Y -- Sì --&gt; Z["Aggiorna libreria utente"]
-    Y -- No --&gt; FINE["Fine"]
-    Z --&gt; FINE
-    style FINE color:#D50000</code></pre>
+<p>```mermaid</p>
+<p>flowchart TD<br />
+    A["Inizio: Utente accede a Syncgames"] &rarr; B["Registrazione con email o social login"]<br />
+    B &rarr; C["Compilazione questionario preferenze"]<br />
+    C &rarr; D{"Collegare account esterni?"}<br />
+    D -- Sì &rarr; E["Importazione libreria giochi"]<br />
+    D -- No &rarr; G["Generazione scheda profilo"]<br />
+    E &rarr; G<br />
+    G &rarr; H["Profilo salvato e modificabile"]<br />
+    H &rarr; I["Accesso funzione cerca gioco"]<br />
+    I &rarr; J["Inserimento filtri contestuali"]<br />
+    J &rarr; K["Analisi profilo, contesto e database giochi"]<br />
+    K &rarr; L["Classifica giochi personalizzata"]<br />
+    L &rarr; M["Visualizza dettagli del gioco"]<br />
+    M &rarr; N{"Aggiungere alla wishlist?"}<br />
+    N -- Sì &rarr; O["Aggiunto alla wishlist"]<br />
+    N -- No &rarr; P{"Acquistare il gioco?"}<br />
+    O &rarr; R["Aggiorna algoritmo"]<br />
+    P -- Sì &rarr; S["Clic su Trova al miglior prezzo"]<br />
+    P -- No &rarr; R<br />
+    S &rarr; T["Recupero prezzi da store esterni"]<br />
+    T &rarr; U["Visualizza offerte ordinate per prezzo"]<br />
+    U &rarr; V["Seleziona store"]<br />
+    V &rarr; W["Reindirizzamento a sito esterno"]<br />
+    W &rarr; X{"Sincronizzare con libreria?"}<br />
+    X -- Sì &rarr; Y["Aggiorna libreria utente"]<br />
+    X -- No &rarr; FINE["Fine"]<br />
+    Y &rarr; FINE<br />
+    R &rarr; L<br />
+    style FINE color:#D50000</p>
+<hr />
+<p>config:<br />
+  layout: dagre</p>
+<hr />
+<p>flowchart TD<br />
+    A["Utente<br />
+    ___<br />
+    -età<br />
+    -nome<br />
+    -cognome<br />
+    -genere_preferito<br />
+-email<br />
+-password"] &harr; B["Gioco<br />
+__<br />
+-genere<br />
+-durata<br />
+-preferito<br />
+-piattaforma<br />
+-grafica"] </p>
 
 
 
