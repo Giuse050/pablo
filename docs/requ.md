@@ -13,7 +13,6 @@
     * Il sistema deve dare la possibilità di sincronizzare il proprio account SyncGamescon quelli Steam, Xbox, PlayStation per avere accesso a tutti i titoli giocati in precedenza evitando che l'algoritmo li riconsigli all'utente .
 
 * Modifica e aggiornamento profilo:
-
     * Il sistema deve poter permettere all’utente di aggiornare preferenze, aggiungere/rimuovere piattaforme e generi in qualsiasi momento.
 
 2.  Ricerca e Suggerimento Giochi
@@ -33,7 +32,7 @@
 
 * Feedback sul consiglio:
 
-    *Il sistema da la possibilità all’utente può votare i consigli ricevuti per migliorare l’accuratezza dell’algoritmo nel tempo.
+    * Il sistema da la possibilità all’utente può votare i consigli ricevuti per migliorare l’accuratezza dell’algoritmo nel tempo.
 
 
 3. Comparazione e Acquisto
@@ -42,14 +41,12 @@
     * Il sistema interroga store partner (es. Steam, Epic, Amazon, Instant Gaming) per recuperare i prezzi aggiornati.
 
 * Visualizzazione offerte:
-
     * Il sistema ordina le offerte per prezzo, con indicazione di: nome store, eventuali tasse/spese incluse, valutazione dello store.
 
 * Reindirizzamento acquisto:
     * Il sistema permette all'utente di cliccando su un’offerta, reindirizzandolo su sul sito desiderato per completare l’acquisto.
 
 * Notifiche calo prezzo:
-
     * Il sistema deve inviare notifiche via email/app se un gioco nella wishlist scende sotto un prezzo soglia impostato dall’utente.
 
 
@@ -93,7 +90,7 @@
 * Il sistema nella versione mobile (se prevista) deve essere compatibile con Android (≥ 8.0) e iOS (≥ 13).
 
 
-5️. Sicurezza
+5. Sicurezza
 
 * Il sistema deve utilizzare protocolli HTTPS per tutte le comunicazioni tra client e server.
 

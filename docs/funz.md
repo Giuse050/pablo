@@ -1,7 +1,8 @@
-
 ```mermaid
-
 flowchart TD
+    U["Utente<br/>- età int<br/>- nome str<br/>- cognome str<br/>- genere_preferito str<br/>- email str<br/>- password str"]
+    GIOCO["Gioco<br/>- genere str<br/>- durata str<br/>- preferito str<br/>- piattaforma str<br/>- grafica str"]
+    U <--> GIOCO
     A["Inizio: Utente accede a Syncgames"] --> B["Registrazione con email o social login"]
     B --> C["Compilazione questionario preferenze"]
     C --> D{"Collegare account esterni?"}
@@ -18,34 +19,17 @@ flowchart TD
     N -- Sì --> O["Aggiunto alla wishlist"]
     N -- No --> P{"Acquistare il gioco?"}
     O --> R["Aggiorna algoritmo"]
-    P -- Sì --> S["Clic su Trova al miglior prezzo"]
+    P -- Sì --> S["Clic sul tasto ''Trova al miglior prezzo''"]
     P -- No --> R
-    S --> T["Recupero prezzi da store esterni"]
-    T --> U["Visualizza offerte ordinate per prezzo"]
-    U --> V["Seleziona store"]
+    S --> T["Recupero prezzi da store esterni affidabili"]
+    T --> U1["Visualizza offerte ordinate per prezzo"]
+    U1 --> V["Seleziona store"]
     V --> W["Reindirizzamento a sito esterno"]
     W --> X{"Sincronizzare con libreria?"}
     X -- Sì --> Y["Aggiorna libreria utente"]
-    X -- No --> FINE["Fine"]
-    Y --> FINE
+    X -- No --> Z["FINE. (hai usato correttamente GameSync, speriamo di averti regalato un esperienza soddisfacente e piacevole.)"]
+    Y --> Z
     R --> L
-    style FINE color:#D50000
- ---
-config:
-  layout: dagre
----
-flowchart TD
-    A["Utente
-    ___
-    -età
-    -nome
-    -cognome
-    -genere_preferito
--email
--password"] <--> B["Gioco
-__
--genere
--durata
--preferito
--piattaforma
--grafica"] 
+    style Z fill:red,color:lightblue
+    style A fill:green,color:orange
+```

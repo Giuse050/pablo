@@ -420,37 +420,39 @@
 
   <h1>Funzionalità</h1>
 
-<pre class="mermaid"><code>
-flowchart TD
+<pre class="mermaid"><code>flowchart TD
+    U["Utente&lt;br/&gt;- età int&lt;br/&gt;- nome str&lt;br/&gt;- cognome str&lt;br/&gt;- genere_preferito str&lt;br/&gt;- email str&lt;br/&gt;- password str"]
+    GIOCO["Gioco&lt;br/&gt;- genere str&lt;br/&gt;- durata str&lt;br/&gt;- preferito str&lt;br/&gt;- piattaforma str&lt;br/&gt;- grafica str"]
+    U &lt;--&gt; GIOCO
     A["Inizio: Utente accede a Syncgames"] --&gt; B["Registrazione con email o social login"]
     B --&gt; C["Compilazione questionario preferenze"]
     C --&gt; D{"Collegare account esterni?"}
     D -- Sì --&gt; E["Importazione libreria giochi"]
-    D -- No --&gt; F["Salta importazione"]
-    E --&gt; G["Generazione scheda profilo"]
-    F --&gt; G
+    D -- No --&gt; G["Generazione scheda profilo"]
+    E --&gt; G
     G --&gt; H["Profilo salvato e modificabile"]
     H --&gt; I["Accesso funzione cerca gioco"]
     I --&gt; J["Inserimento filtri contestuali"]
     J --&gt; K["Analisi profilo, contesto e database giochi"]
     K --&gt; L["Classifica giochi personalizzata"]
-    L --&gt; M["Visualizza dettagli: recensioni e video del gioco"] &amp; S["Seleziona gioco da acquistare"]
-    M --&gt; N{"Azione utente"}
-    N --&gt; O["Aggiungi alla wishlist"] &amp; P["Scarta gioco"] &amp; Q["Segnala errore algoritmo"]
+    L --&gt; M["Visualizza dettagli del gioco"]
+    M --&gt; N{"Aggiungere alla wishlist?"}
+    N -- Sì --&gt; O["Aggiunto alla wishlist"]
+    N -- No --&gt; P{"Acquistare il gioco?"}
     O --&gt; R["Aggiorna algoritmo"]
-    P --&gt; R
-    Q --&gt; R
+    P -- Sì --&gt; S["Clic sul tasto ''Trova al miglior prezzo''"]
+    P -- No --&gt; R
+    S --&gt; T["Recupero prezzi da store esterni affidabili"]
+    T --&gt; U1["Visualizza offerte ordinate per prezzo"]
+    U1 --&gt; V["Seleziona store"]
+    V --&gt; W["Reindirizzamento a sito esterno"]
+    W --&gt; X{"Sincronizzare con libreria?"}
+    X -- Sì --&gt; Y["Aggiorna libreria utente"]
+    X -- No --&gt; Z["FINE. (hai usato correttamente GameSync, speriamo di averti regalato un esperienza soddisfacente e piacevole.)"]
+    Y --&gt; Z
     R --&gt; L
-    S --&gt; T["Clic su Trova al miglior prezzo"]
-    T --&gt; U["Recupero prezzi da store esterni"]
-    U --&gt; V["Visualizza offerte ordinate per prezzo"]
-    V --&gt; W["Seleziona store"]
-    W --&gt; X["Reindirizzamento a sito esterno"]
-    X --&gt; Y{"Sincronizzare con libreria?"}
-    Y -- Sì --&gt; Z["Aggiorna libreria utente"]
-    Y -- No --&gt; FINE["Fine"]
-    Z --&gt; FINE
-    style FINE color:#D50000</code></pre>
+    style Z fill:red,color:lightblue
+    style A fill:green,color:orange</code></pre>
 
 
 

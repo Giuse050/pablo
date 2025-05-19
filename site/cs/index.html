@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creazione-del-profilo" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -328,6 +333,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Casi d'uso
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -339,6 +357,50 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creazione-del-profilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creazione del profilo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riuscire-a-trovare-il-gioco-tramite-lalgoritmo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riuscire a trovare il gioco tramite l’algoritmo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acquistare-il-gioco-al-miglior-prezzo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acquistare il gioco al miglior prezzo
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -406,6 +468,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creazione-del-profilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creazione del profilo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riuscire-a-trovare-il-gioco-tramite-lalgoritmo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riuscire a trovare il gioco tramite l’algoritmo:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acquistare-il-gioco-al-miglior-prezzo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acquistare il gioco al miglior prezzo
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -422,44 +519,50 @@
 
   <h1>Casi d'uso</h1>
 
-<p>+Creazione del profilo:</p>
-<p>Attori principali: utente, sistema Syncgames</p>
-<p>Obiettivo: permettere all’utente di creare un profilo personalizzato, che rifletta le sue preferenze di gioco.</p>
-<p>Flusso principale:</p>
-<p>1: L’utente si registra tramite email/social login.</p>
-<p>2: Il sistema chiede di compilare un questionario/intervista (es: generi preferiti, piattaforme possedute, tempo medio di gioco, interesse per multiplayer/singleplayer).</p>
-<p>3: L’utente può aggiungere manualmente i giochi già giocati o collegare account esterni (es: Steam, Xbox, PlayStation) per importare la propria libreria.</p>
-<p>4: Il sistema genera una scheda profilo con:</p>
-<p>-Preferenze esplicite</p>
-<p>-Cronologia giochi</p>
-<p>-Abitudini di gioco</p>
-<p>-Obiettivi (es: giochi veloci, esperienze immersive, party games).</p>
-<p>5: L’utente può modificare o aggiornare il profilo in qualsiasi momento.</p>
-<p>+Riuscire a trovare il gioco tramite l’algoritmo</p>
-<p>Attori principali: utente, sistema Syncgames, algoritmo di matchmaking giochi</p>
-<p>Obiettivo: suggerire all’utente uno o più giochi adatti sulla base del profilo e del contesto.</p>
-<p>Flusso principale: 1: L’utente accede alla funzionalità di ricerca.</p>
-<p>2: Il sistema chiede eventuali filtri contestuali (es: “sto cercando un gioco per 2 persone, sessioni brevi, stasera”).</p>
-<p>3: L’algoritmo analizza:</p>
-<p>-Dati del profilo utente</p>
-<p>-Preferenze contestuali</p>
-<p>-Database dei giochi (recensioni, caratteristiche, durata, modalità).</p>
-<p>4:Viene generata una classifica personalizzata di giochi, con una percentuale di compatibilità.</p>
-<p>5:L’utente può esplorare i dettagli di ciascun gioco, leggere recensioni, vedere video.</p>
-<p>6:L’utente può salvare giochi nella wishlist o scartarli (migliorando l’algoritmo con feedback implicito).</p>
-<p>Acquistare il gioco al miglior prezzo</p>
-<p>Attori principali: utente, sistema Syncgames, siti di store esterni Obiettivo: permettere di acquistare il gioco scelto al prezzo più conveniente.</p>
-<p>Obiettivo: riusicire a trovare tra gli store partner il prezzo migliore per il titolo desiderato</p>
-<p>Flusso principale:</p>
-<p>1: Dopo aver selezionato un gioco, l’utente clicca su “Trova al miglior prezzo”.</p>
-<p>2: Il sistema effettua uno scraping o usa API di siti esterni (Steam, Epic, Instant 0.Gaming, Amazon, ecc.) per recuperare i prezzi aggiornati.</p>
-<p>3: Viene mostrata una lista di offerte ordinate per prezzo, con indicazione di:</p>
-<p>-Negozio</p>
-<p>-Prezzo totale (eventuali tasse/commissioni incluse)</p>
-<p>-Valutazione dello store (se disponibile)</p>
-<p>-Link diretto all’acquisto.</p>
-<p>4: L’utente seleziona lo store e viene reindirizzato al sito esterno per completare l’acquisto.</p>
-<p>5: (Opzionale) Syncgames registra l’acquisto per aggiornare la libreria dell’utente.</p>
+<h2 id="creazione-del-profilo">Creazione del profilo:<a class="headerlink" href="#creazione-del-profilo" title="Permanent link">&para;</a></h2>
+<p><strong>Attori principali</strong>: <em>utente</em>, <em>sistema Syncgames</em></p>
+<p><strong>Obiettivo</strong>: permettere all’utente di creare un profilo personalizzato, che rifletta le sue preferenze di gioco.</p>
+<h4 id="flusso-principale">Flusso principale:<a class="headerlink" href="#flusso-principale" title="Permanent link">&para;</a></h4>
+<ol>
+<li>(Prerequisito = l'utente ha già fatto l'accesso) L'utente clicca sul pulsante "inizia il questionario"</li>
+<li>Il sistema propone all'utente 10 domande oer delienare la propria personalità e i suoi gusti, presentando domande più o meno specifiche </li>
+<li>L'utente risponde ad ogni domanda cliccando su uno dei 7 pallini per indicare quanto è in accordo o in disaccordo con l'affermazione presentata dal quiz</li>
+<li>L'utente terminate le 10 domande clicca su termina quiz</li>
+<li>Il sistema mostra un messaggio di conferma </li>
+</ol>
+<h2 id="riuscire-a-trovare-il-gioco-tramite-lalgoritmo">Riuscire a trovare il gioco tramite l’algoritmo:<a class="headerlink" href="#riuscire-a-trovare-il-gioco-tramite-lalgoritmo" title="Permanent link">&para;</a></h2>
+<p><strong>Attori principali</strong>: utente, sistema Syncgames, algoritmo di matchmaking giochi</p>
+<p><strong>Obiettivo</strong>: suggerire all’utente uno o più giochi adatti sulla base del profilo e del contesto.</p>
+<p><strong>Flusso principale</strong>: <br />
+1. L’utente accede alla funzionalità di ricerca.<br />
+2. Il sistema chiede eventuali filtri contestuali (es: “sto cercando un gioco per 2 persone, sessioni brevi, stasera”).<br />
+3. L’algoritmo analizza:<br />
+ * Dati del profilo utente<br />
+ * Preferenze contestuali<br />
+ * Database dei giochi<br />
+4. L’utente può esplorare i dettagli di ciascun gioco, leggere recensioni, vedere video.<br />
+5. L’utente può salvare giochi nella wishlist facendo swipe a dastra o scartarli facend swipe a sinistra(migliorando l’algoritmo con feedback implicito).</p>
+<h2 id="acquistare-il-gioco-al-miglior-prezzo">Acquistare il gioco al miglior prezzo<a class="headerlink" href="#acquistare-il-gioco-al-miglior-prezzo" title="Permanent link">&para;</a></h2>
+<p><strong>Attori principali</strong>: utente, sistema Syncgames, siti di store esterni </p>
+<p><strong>Obiettivo</strong>: riusicire a trovare tra gli store partner il prezzo migliore per il titolo desiderato</p>
+<p><strong>Flusso principale</strong>:</p>
+<ol>
+<li>Dopo aver selezionato un gioco, l’utente clicca su “Trova al miglior prezzo”.</li>
+<li>Il sistema effettua uno scraping o usa API di siti esterni (Steam, Epic, Instant 0.Gaming, Amazon, ecc.) per recuperare i prezzi aggiornati.</li>
+<li>
+<p>Viene mostrata una lista di offerte ordinate per prezzo, con indicazione di:</p>
+<ul>
+<li>Negozio</li>
+<li>Prezzo totale (eventuali tasse/commissioni incluse)</li>
+<li>Valutazione dello store (se disponibile)</li>
+<li>Link diretto all’acquisto.</li>
+</ul>
+</li>
+<li>
+<p>L’utente seleziona lo store e viene reindirizzato al sito esterno per completare l’acquisto.</p>
+</li>
+<li>(Opzionale) Syncgames registra l’acquisto per aggiornare la libreria dell’utente.</li>
+</ol>
 
 
 

@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#requisiti-funzionali" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -350,6 +355,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Requisiti
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -361,6 +379,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisiti-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      REQUISITI FUNZIONALI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisiti-non-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      REQUISITI NON FUNZIONALI
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -406,6 +459,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisiti-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      REQUISITI FUNZIONALI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisiti-non-funzionali" class="md-nav__link">
+    <span class="md-ellipsis">
+      REQUISITI NON FUNZIONALI
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -422,57 +501,169 @@
 
   <h1>Requisiti</h1>
 
-<p>REQUISITI FUNZIONALI </p>
-<p>1️. Creazione Profilo Utente</p>
-<p>-Registrazione e accesso</p>
-<p>--L’utente può registrarsi usando email/password o account social (Google, Facebook, Steam).</p>
-<p>--È possibile effettuare il login su più dispositivi.</p>
-<p>-Inserimento preferenze videoludiche</p>
-<p>L’utente compila un questionario su: generi preferiti, piattaforme possedute, modalità di gioco preferite (singleplayer, multiplayer).</p>
-<p>-Collegamento account esterni:</p>
-<p>Possibilità di sincronizzare la propria libreria giochi da account Steam, Xbox, PlayStation per popolare automaticamente i giochi già giocati.</p>
-<p>-Modifica e aggiornamento profilo:</p>
-<p>L’utente può aggiornare preferenze, aggiungere/rimuovere piattaforme e generi in qualsiasi momento.</p>
-<p>2️.  Ricerca e Suggerimento Giochi</p>
-<p>-Definizione filtri di ricerca:1</p>
-<p>L’utente può specificare contesto e parametri: es. “cercami un gioco per 3 persone, durata max 1 ora, su PC”.</p>
-<p>-Algoritmo di matchmaking:</p>
-<p>Il sistema combina le informazioni del profilo con il contesto per calcolare una classifica di giochi consigliati.</p>
-<p>-Visualizzazione classifica giochi:</p>
-<p>Ogni gioco suggerito mostra: nome, copertina, descrizione breve, percentuale di compatibilità, recensioni.</p>
-<p>-Gestione lista preferiti:</p>
-<p>L’utente può aggiungere giochi ai preferiti o escluderli per non ricevere più suggerimenti simili.</p>
-<p>-Feedback sul consiglio:</p>
-<p>L’utente può votare i consigli ricevuti per migliorare l’accuratezza dell’algoritmo nel tempo.</p>
-<p>3️. Comparazione e Acquisto</p>
-<p>-Ricerca automatica prezzi:</p>
-<p>Il sistema interroga store partner (es. Steam, Epic, Amazon, Instant Gaming) per recuperare i prezzi aggiornati.</p>
-<p>-Visualizzazione offerte:</p>
-<p>Le offerte vengono ordinate per prezzo, con indicazione di: nome store, eventuali tasse/spese incluse, valutazione dello store.</p>
-<p>-Reindirizzamento acquisto:</p>
-<p>Cliccando su un’offerta, l’utente viene portato sul sito esterno per completare l’acquisto.</p>
-<p>-Notifiche calo prezzo:</p>
-<p>SyncGames invia notifiche via email/app se un gioco nella wishlist scende sotto un prezzo soglia impostato dall’utente.</p>
-<p>REQUISITI NON FUNZIONALI </p>
-<p>1️. Prestazioni</p>
-<p>--Il sistema deve rispondere alle richieste di ricerca in ≤ 2 secondi per garantire un’esperienza fluida.</p>
-<p>--L’aggiornamento dei prezzi avviene ogni 12 ore per garantire dati affidabili senza sovraccaricare le API esterne.</p>
-<p>2️. Affidabilità</p>
-<p>--SyncGames deve garantire un uptime del 99% su base mensile.</p>
-<p>--In caso di crash del sistema, i dati utente (profilo, preferenze, giochi salvati) devono essere recuperabili senza perdita.</p>
-<p>--Salvataggio automatico di ogni modifica alle preferenze utente o ai giochi salvati.</p>
-<p>3️. Usabilità</p>
-<p>--Interfaccia user-friendly, accessibile sia da mobile che desktop, con design responsive.</p>
-<p>--Inclusione di un tutorial guidato alla prima registrazione per spiegare il funzionamento di SyncGames.</p>
-<p>--Iconografia chiara e linguaggio semplice per utenti non esperti di tecnologia.</p>
-<p>4️.  Compatibilità</p>
-<p>--Compatibilità con i principali browser aggiornati: Chrome, Firefox, Edge, Safari.</p>
-<p>--Supporto a risoluzioni da 720p a 4K, con adattamento automatico della UI.</p>
-<p>--L’app mobile (se prevista) compatibile con Android (≥ 8.0) e iOS (≥ 13).</p>
-<p>5️. Sicurezza</p>
-<p>--Utilizzo di protocolli sicuri HTTPS per tutte le comunicazioni tra client e server.</p>
-<p>--Crittografia dei dati sensibili (email, password) e uso di OAuth 2.0 per l’autenticazione tramite social.</p>
-<p>--Gestione dei dati utente in conformità con il GDPR, con possibilità per l’utente di cancellare definitivamente il proprio account e i relativi dati.</p>
+<h2 id="requisiti-funzionali">REQUISITI FUNZIONALI<a class="headerlink" href="#requisiti-funzionali" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Creazione Profilo Utente</li>
+</ol>
+<ul>
+<li>
+<p>Registrazione e accesso</p>
+<ul>
+<li>Il sistema deve permettere all’utente di registrarsi usando email/password o account social (Google, Facebook, Steam).</li>
+<li>Il sistema deve dare la possibilità di effettuare il login su più dispositivi.</li>
+</ul>
+</li>
+<li>
+<p>Inserimento preferenze videoludiche</p>
+<ul>
+<li>Il sistema deve profilare all’utente compila un questionario su: generi preferiti, piattaforme possedute, modalità di gioco preferite (singleplayer, multiplayer).</li>
+</ul>
+</li>
+<li>
+<p>Collegamento account esterni:</p>
+<ul>
+<li>Il sistema deve dare la possibilità di sincronizzare il proprio account SyncGamescon quelli Steam, Xbox, PlayStation per avere accesso a tutti i titoli giocati in precedenza evitando che l'algoritmo li riconsigli all'utente .</li>
+</ul>
+</li>
+<li>
+<p>Modifica e aggiornamento profilo:</p>
+<ul>
+<li>Il sistema deve poter permettere all’utente di aggiornare preferenze, aggiungere/rimuovere piattaforme e generi in qualsiasi momento.</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Ricerca e Suggerimento Giochi</li>
+</ol>
+<ul>
+<li>
+<p>Definizione filtri di ricerca:</p>
+<ul>
+<li>Il sistema permette all’utente di aggiungere prima della profilassi dei videogioci da parte dell'algoritmo vari filtri per rendere la ricerca il più dettagliata posssiblie: (durata media, grafica, prezzo, casa produttrice...)</li>
+</ul>
+</li>
+<li>
+<p>Algoritmo di matchmaking:</p>
+<ul>
+<li>Il sistema combina le informazioni del profilo con il contesto per calcolare una classifica di giochi consigliati.</li>
+</ul>
+</li>
+<li>
+<p>Visualizzazione classifica giochi:   </p>
+<ul>
+<li>Il sistema per ogni gioco suggerito mostra: nome, copertina, descrizione breve, percentuale di compatibilità, recensioni.</li>
+</ul>
+</li>
+<li>
+<p>Gestione lista preferiti:</p>
+<ul>
+<li>Il sistema permette all’utente di aggiungere giochi ai preferiti o escluderli per non ricevere più suggerimenti simili.</li>
+</ul>
+</li>
+<li>
+<p>Feedback sul consiglio:</p>
+<ul>
+<li>Il sistema da la possibilità all’utente può votare i consigli ricevuti per migliorare l’accuratezza dell’algoritmo nel tempo.</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Comparazione e Acquisto</li>
+</ol>
+<ul>
+<li>
+<p>Ricerca automatica prezzi:</p>
+<ul>
+<li>Il sistema interroga store partner (es. Steam, Epic, Amazon, Instant Gaming) per recuperare i prezzi aggiornati.</li>
+</ul>
+</li>
+<li>
+<p>Visualizzazione offerte:</p>
+<ul>
+<li>Il sistema ordina le offerte per prezzo, con indicazione di: nome store, eventuali tasse/spese incluse, valutazione dello store.</li>
+</ul>
+</li>
+<li>
+<p>Reindirizzamento acquisto:</p>
+<ul>
+<li>Il sistema permette all'utente di cliccando su un’offerta, reindirizzandolo su sul sito desiderato per completare l’acquisto.</li>
+</ul>
+</li>
+<li>
+<p>Notifiche calo prezzo:</p>
+<ul>
+<li>Il sistema deve inviare notifiche via email/app se un gioco nella wishlist scende sotto un prezzo soglia impostato dall’utente.</li>
+</ul>
+</li>
+</ul>
+<h2 id="requisiti-non-funzionali">REQUISITI NON FUNZIONALI<a class="headerlink" href="#requisiti-non-funzionali" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Prestazioni</li>
+</ol>
+<ul>
+<li>
+<p>Il sistema deve rispondere alle richieste di ricerca in ≤ 2 secondi per garantire un’esperienza fluida.</p>
+</li>
+<li>
+<p>Il sistema aggiorna i prezzi ogni ora per garantire dati affidabili senza sovraccaricare le API esterne.</p>
+</li>
+</ul>
+<ol start="2">
+<li>Affidabilità</li>
+</ol>
+<ul>
+<li>
+<p>Il sistema deve garantire un uptime del 99% su base mensile.</p>
+</li>
+<li>
+<p>In caso di crash, il sistema permette di recuperare i dati utente (profilo, preferenze, giochi salvati) senza perdita.</p>
+</li>
+<li>
+<p>Il sistema permette il salvataggio automatico di ogni modifica alle preferenze utente o ai giochi salvati.</p>
+</li>
+</ul>
+<ol start="3">
+<li>Usabilità</li>
+</ol>
+<ul>
+<li>
+<p>Il sistema utiliza un'interfaccia user-friendly, accessibile sia da mobile che desktop, con design responsive.</p>
+</li>
+<li>
+<p>Il sistema è inclusione di un tutorial guidato alla prima registrazione per spiegare il funzionamento di SyncGames.</p>
+</li>
+<li>
+<p>Il sistema deve possedere un' iconografia chiara e linguaggio semplice per utenti non esperti di tecnologia.</p>
+</li>
+</ul>
+<ol start="4">
+<li>Compatibilità</li>
+</ol>
+<ul>
+<li>
+<p>Il sistema deve avere compatibilità con i principali browser aggiornati: Chrome, Firefox, Edge, Safari.</p>
+</li>
+<li>
+<p>Il sistema deve supportare risoluzioni da 720p a 4K, con adattamento automatico della UI.</p>
+</li>
+<li>
+<p>Il sistema nella versione mobile (se prevista) deve essere compatibile con Android (≥ 8.0) e iOS (≥ 13).</p>
+</li>
+</ul>
+<ol start="5">
+<li>Sicurezza</li>
+</ol>
+<ul>
+<li>
+<p>Il sistema deve utilizzare protocolli HTTPS per tutte le comunicazioni tra client e server.</p>
+</li>
+<li>
+<p>Il sistema deve prevedere la crittografia dei dati sensibili (email, password) e uso di OAuth 2.0 per l’autenticazione tramite social.</p>
+</li>
+<li>
+<p>Il sistema deve avere una gestione dei dati utente in conformità con il GDPR, con possibilità per l’utente di cancellare definitivamente il proprio account e i relativi dati.</p>
+</li>
+</ul>
 
 
 
