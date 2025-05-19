@@ -524,21 +524,11 @@
 <p><strong>Obiettivo</strong>: permettere all’utente di creare un profilo personalizzato, che rifletta le sue preferenze di gioco.</p>
 <h4 id="flusso-principale">Flusso principale:<a class="headerlink" href="#flusso-principale" title="Permanent link">&para;</a></h4>
 <ol>
-<li>L’utente si registra tramite email/social login.</li>
-<li>Il sistema chiede di compilare un questionario/intervista (es: generi preferiti, piattaforme possedute, tempo medio di gioco, interesse per multiplayer/singleplayer).</li>
-<li>L’utente può aggiungere manualmente i giochi già giocati o collegare account esterni (es: Steam, Xbox, PlayStation) per importare la propria libreria.</li>
-<li>
-<p>Il sistema genera una scheda profilo con:</p>
-<ul>
-<li>Preferenze esplicite</li>
-<li>Cronologia giochi</li>
-<li>Abitudini di gioco</li>
-<li>Obiettivi (es: giochi veloci, esperienze immersive, party games).</li>
-</ul>
-</li>
-<li>
-<p>L’utente può modificare o aggiornare il profilo in qualsiasi momento.</p>
-</li>
+<li>(Prerequisito = l'utente ha già fatto l'accesso) L'utente clicca sul pulsante "inizia il questionario"</li>
+<li>Il sistema propone all'utente 10 domande oer delienare la propria personalità e i suoi gusti, presentando domande più o meno specifiche </li>
+<li>L'utente risponde ad ogni domanda cliccando su uno dei 7 pallini per indicare quanto è in accordo o in disaccordo con l'affermazione presentata dal quiz</li>
+<li>L'utente terminate le 10 domande clicca su termina quiz</li>
+<li>Il sistema mostra un messaggio di conferma </li>
 </ol>
 <h2 id="riuscire-a-trovare-il-gioco-tramite-lalgoritmo">Riuscire a trovare il gioco tramite l’algoritmo:<a class="headerlink" href="#riuscire-a-trovare-il-gioco-tramite-lalgoritmo" title="Permanent link">&para;</a></h2>
 <p><strong>Attori principali</strong>: utente, sistema Syncgames, algoritmo di matchmaking giochi</p>
@@ -547,16 +537,13 @@
 1. L’utente accede alla funzionalità di ricerca.<br />
 2. Il sistema chiede eventuali filtri contestuali (es: “sto cercando un gioco per 2 persone, sessioni brevi, stasera”).<br />
 3. L’algoritmo analizza:<br />
-    * Dati del profilo utente<br />
-    * Preferenze contestuali<br />
-    * Database dei giochi (recensioni, caratteristiche, durata, modalità).</p>
-<ol start="4">
-<li>Viene generata una classifica personalizzata di giochi, con una percentuale di compatibilità.</li>
-<li>L’utente può esplorare i dettagli di ciascun gioco, leggere recensioni, vedere video.</li>
-<li>L’utente può salvare giochi nella wishlist o scartarli (migliorando l’algoritmo con feedback implicito).</li>
-</ol>
+ * Dati del profilo utente<br />
+ * Preferenze contestuali<br />
+ * Database dei giochi<br />
+4. L’utente può esplorare i dettagli di ciascun gioco, leggere recensioni, vedere video.<br />
+5. L’utente può salvare giochi nella wishlist facendo swipe a dastra o scartarli facend swipe a sinistra(migliorando l’algoritmo con feedback implicito).</p>
 <h2 id="acquistare-il-gioco-al-miglior-prezzo">Acquistare il gioco al miglior prezzo<a class="headerlink" href="#acquistare-il-gioco-al-miglior-prezzo" title="Permanent link">&para;</a></h2>
-<p><strong>Attori principali</strong>: utente, sistema Syncgames, siti di store esterni Obiettivo: permettere di acquistare il gioco scelto al prezzo più conveniente.</p>
+<p><strong>Attori principali</strong>: utente, sistema Syncgames, siti di store esterni </p>
 <p><strong>Obiettivo</strong>: riusicire a trovare tra gli store partner il prezzo migliore per il titolo desiderato</p>
 <p><strong>Flusso principale</strong>:</p>
 <ol>
