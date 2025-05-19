@@ -10,10 +10,15 @@ class Utente ():
         
 
 class Gioco ():
-    def __init__ (self,nome, genere, durata, preferito, piattaforma, grafica):
+    def __init__ (self,nome, genere, durata, piattaforma, grafica):
         self.nome=nome
         self.genere=genere
         self.durata=durata
-        self.preferito=preferito
         self.piattaforma=piattaforma
         self.grafica=grafica
+        
+class Store ():
+    def __init__ (self, nomeStore, nomeGioco, prezzo):
+        self.nomeStore=nomeStore
+        self.nomeGioco=nomeGioco
+        self.prezzo=prezzo

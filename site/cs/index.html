@@ -530,6 +530,20 @@
 <li>L'utente terminate le 10 domande clicca su termina quiz</li>
 <li>Il sistema mostra un messaggio di conferma </li>
 </ol>
+<pre class="mermaid"><code>flowchart TD
+    utente([Utente])
+    sistema([Sistema Syncgames])
+
+    uc1([Inizia il questionario])
+    uc2([Risponde alle 10 domande])
+    uc3([Visualizza conferma quiz])
+
+    utente --&gt; uc1
+    uc1 --&gt; sistema
+    utente --&gt; uc2
+    uc2 --&gt; sistema
+    sistema --&gt; uc3
+    utente --&gt; uc3</code></pre>
 <h2 id="riuscire-a-trovare-il-gioco-tramite-lalgoritmo">Riuscire a trovare il gioco tramite l’algoritmo:<a class="headerlink" href="#riuscire-a-trovare-il-gioco-tramite-lalgoritmo" title="Permanent link">&para;</a></h2>
 <p><strong>Attori principali</strong>: utente, sistema Syncgames, algoritmo di matchmaking giochi</p>
 <p><strong>Obiettivo</strong>: suggerire all’utente uno o più giochi adatti sulla base del profilo e del contesto.</p>
@@ -542,6 +556,28 @@
  * Database dei giochi<br />
 4. L’utente può esplorare i dettagli di ciascun gioco, leggere recensioni, vedere video.<br />
 5. L’utente può salvare giochi nella wishlist facendo swipe a dastra o scartarli facend swipe a sinistra(migliorando l’algoritmo con feedback implicito).</p>
+<pre class="mermaid"><code>flowchart TD
+    utente([Utente])
+    sistema([Sistema Syncgames])
+    algoritmo([ Algoritmo Matchmaking])
+
+    uc4([Accede alla ricerca giochi])
+    uc5([Inserisce filtri contestuali])
+    uc6([Riceve suggerimenti personalizzati])
+    uc7([Esplora dettagli del gioco])
+    uc8([Salva nella wishlist])
+    uc9([Scarta gioco])
+
+    utente --&gt; uc4
+    uc4 --&gt; sistema
+    utente --&gt; uc5
+    uc5 --&gt; sistema
+    sistema --&gt; algoritmo
+    algoritmo --&gt; uc6
+    utente --&gt; uc6
+    utente --&gt; uc7
+    utente --&gt; uc8
+    utente --&gt; uc9</code></pre>
 <h2 id="acquistare-il-gioco-al-miglior-prezzo">Acquistare il gioco al miglior prezzo<a class="headerlink" href="#acquistare-il-gioco-al-miglior-prezzo" title="Permanent link">&para;</a></h2>
 <p><strong>Attori principali</strong>: utente, sistema Syncgames, siti di store esterni </p>
 <p><strong>Obiettivo</strong>: riusicire a trovare tra gli store partner il prezzo migliore per il titolo desiderato</p>
@@ -563,6 +599,24 @@
 </li>
 <li>(Opzionale) Syncgames registra l’acquisto per aggiornare la libreria dell’utente.</li>
 </ol>
+<pre class="mermaid"><code>flowchart TD
+    utente([👤 Utente])
+    sistema([🖥️ Sistema Syncgames])
+    store([🏬 Store Esterni])
+
+    uc10([Trova il miglior prezzo])
+    uc11([Visualizza offerte store])
+    uc12([Reindirizza allo store])
+    uc13([Aggiorna libreria])
+
+    utente --&gt; uc10
+    uc10 --&gt; sistema
+    sistema --&gt; uc11
+    uc11 --&gt; store
+    utente --&gt; uc12
+    uc12 --&gt; store
+    sistema --&gt; uc13
+    utente --&gt; uc13</code></pre>
 
 
 
